@@ -6,7 +6,7 @@ require_once './../Workerman/Mysql/Connection.php';
 require_once __DIR__.'/../Workerman/Autoloader.php';
 global $mysql;
 $uid = 0;
-$mysql = new \Workerman\MySQL\Connection('127.0.0.1',3306,'root','root','renma');
+//$mysql = new \Workerman\MySQL\Connection('127.0.0.1',3306,'root','root','renma');
 $http_word = new Worker('websocket://0.0.0.0:7865');
 
 $http_word->count=1;
