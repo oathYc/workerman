@@ -5,7 +5,7 @@
 
 <script>
     // ws = new WebSocket('ws://127.0.0.1:7865');
-    ws = new WebSocket('ws://59.110.156.117:7865');
+    ws = new WebSocket('ws://59.110.156.117:8071');
     ws.onopen = function(){
         // var his = document.getElementById('history').value;
         // his += '用户进入'+"\n";
