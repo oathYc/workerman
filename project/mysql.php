@@ -6,6 +6,7 @@ require_once './../Workerman/Mysql/Connection.php';
 require_once __DIR__.'/../Workerman/Autoloader.php';
 global $mysql;
 $uid = 0;
+define('HEARTBEAT_TIME',55);
 //$mysql = new \Workerman\MySQL\Connection('127.0.0.1',3306,'root','root','renma');
 $http_word = new Worker('websocket://0.0.0.0:8071');
 
@@ -22,8 +23,25 @@ $http_word->onConnect = function($connection){
         $conn->send($data);
     }
 };
+$http_word->onWorkerStart = function($http_word){
+    \Workerman\Lib\Timer::add(3,function()use($http_word){
+        $time = time();
+        foreach($http_word->connections as $conn){
+            if(!empty($conn->lastMessageTime )){
+                if($conn->lastMessageTime  < ($time - HEARTBEAT_TIME)){//超过心跳时间
+                    $conn->close();
+                }
+            }else{
+                $conn->lastMessageTime  = $time;
+                continue;
+            }
+        }
+    });
+};
 $http_word->onMessage= function($connection,$data){
     global $http_word;
+    $time = time();
+    $connection->lastMessageTime  = $time;//记录最新发言时间
     foreach($http_word->connections as $conn){
         if(is_string($data)){
             $data = json_decode($data,true);

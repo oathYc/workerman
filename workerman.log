@@ -113,3 +113,75 @@ Stack trace:
 #10 D:\project\workerman\project\mysql.php(24): Workerman\Worker::runAll()
 #11 {main}
 2020-03-03 15:41:56 pid:1 Worker process terminated
+2020-03-11 14:53:35 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Closure object cannot have properties in D:\project\workerman\project\mysql.php:30
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\project\workerman\Workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#2 D:\project\workerman\Workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#3 D:\project\workerman\Workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 D:\project\workerman\Workerman\Worker.php(1351): Workerman\Worker->run()
+#5 D:\project\workerman\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 D:\project\workerman\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 D:\project\workerman\project\mysql.php(67): Workerman\Worker::runAll()
+#8 {main}
+  thrown in D:\project\workerman\project\mysql.php on line 30"
+2020-03-11 14:53:43 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Closure object cannot have properties in D:\project\workerman\project\mysql.php:30
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\project\workerman\Workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#2 D:\project\workerman\Workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#3 D:\project\workerman\Workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 D:\project\workerman\Workerman\Worker.php(1351): Workerman\Worker->run()
+#5 D:\project\workerman\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 D:\project\workerman\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 D:\project\workerman\project\mysql.php(67): Workerman\Worker::runAll()
+#8 {main}
+  thrown in D:\project\workerman\project\mysql.php on line 30"
+2020-03-11 14:54:30 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Closure object cannot have properties in D:\project\workerman\project\mysql.php:30
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\project\workerman\Workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#2 D:\project\workerman\Workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#3 D:\project\workerman\Workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 D:\project\workerman\Workerman\Worker.php(1351): Workerman\Worker->run()
+#5 D:\project\workerman\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 D:\project\workerman\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 D:\project\workerman\project\mysql.php(68): Workerman\Worker::runAll()
+#8 {main}
+  thrown in D:\project\workerman\project\mysql.php on line 30"
+2020-03-11 14:55:02 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Closure object cannot have properties in D:\project\workerman\project\mysql.php:30
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\project\workerman\Workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#2 D:\project\workerman\Workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#3 D:\project\workerman\Workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 D:\project\workerman\Workerman\Worker.php(1351): Workerman\Worker->run()
+#5 D:\project\workerman\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 D:\project\workerman\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 D:\project\workerman\project\mysql.php(68): Workerman\Worker::runAll()
+#8 {main}
+  thrown in D:\project\workerman\project\mysql.php on line 30"
+2020-03-11 14:57:46 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function close() on integer in D:\project\workerman\project\mysql.php:32
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\project\workerman\Workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#2 D:\project\workerman\Workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#3 D:\project\workerman\Workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 D:\project\workerman\Workerman\Worker.php(1351): Workerman\Worker->run()
+#5 D:\project\workerman\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 D:\project\workerman\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 D:\project\workerman\project\mysql.php(68): Workerman\Worker::runAll()
+#8 {main}
+  thrown in D:\project\workerman\project\mysql.php on line 32"
+2020-03-11 15:03:59 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function close() on integer in D:\project\workerman\project\mysql.php:32
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\project\workerman\Workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#2 D:\project\workerman\Workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#3 D:\project\workerman\Workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 D:\project\workerman\Workerman\Worker.php(1351): Workerman\Worker->run()
+#5 D:\project\workerman\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 D:\project\workerman\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 D:\project\workerman\project\mysql.php(68): Workerman\Worker::runAll()
+#8 {main}
+  thrown in D:\project\workerman\project\mysql.php on line 32"
